@@ -183,19 +183,29 @@
 
 //WRITE A C PROGRAM TO PRINT EVEN NUMBERS TO 10
 
+//#include<stdio.h>
+//int main(){
+//	int num = 1;
+//	while(num<=10)
+//	{
+//		if(num%2!=0)
+//		printf("\nodd number is: %d",num);
+//		num++;
+//	}
+//}
+
+
+//program a c program display odd numbers from 1 to n
+
 #include<stdio.h>
 int main(){
-	int num = 1;
-	while(num<=10)
+	int num = 1,i;
+	printf("Enter a number: ");
+	scanf("%d",&i);
+	while(num<=i)
 	{
 		if(num%2!=0)
 		printf("\nodd number is: %d",num);
 		num++;
 	}
 }
-
-//write a c program to calculate sum of numbers from 1 to 5
-//write a c program to calculate sum of numbers from 1 to n
-//write a c program to calculate sum of numbers from 1 to 10
-
-
