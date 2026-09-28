@@ -215,37 +215,53 @@
 //3!=3*2*1=6
 //5!=5*4*3*1=120
 //upto n !
-#include<stdio.h>
-int main()
-{
-	int i=1, c=1,a=1,n;
-	long int fact,sum=0;
-	printf("enter the number of terms:");
-	scanf("%d",&n);
-	
-	while(c<=n){
-		i=1;
-		fact=1;
-		while(i<=a){
-			fact=fact*i;
-			i++;
-		}
-		sum=sum+fact;
-		c++;
-		a=a+2;
-	}
-	printf("sum of the numbers=%d",sum);
-	return 0;
-}
+//#include<stdio.h>
+//int main()
+//{
+//	int i=1, c=1,a=1,n;
+//	long int fact,sum=0;
+//	printf("enter the number of terms:");
+//	scanf("%d",&n);
+//	
+//	while(c<=n){
+//		i=1;
+//		fact=1;
+//		while(i<=a){
+//			fact=fact*i;
+//			i++;
+//		}
+//		sum=sum+fact;
+//		c++;
+//		a=a+2;
+//	}
+//	printf("sum of the numbers=%d",sum);
+//	return 0;
+//}
+
 //2+5+8+11+14..upto n terms.w.c.p to calculate sum of the given series
+//#include<stdio.h>
+//int main(){
+//	int term=2,num,i,sum=0;
+//	printf("Enter a number: ");
+//	scanf("%d",&num);
+//	for(i=1;i<=num;i++){
+//		sum += term;
+//		term += 3;
+//	}
+//	printf("sum of the given series is: %d",sum);
+//}
+
+//1+2+4+7+11+..upto n terms.w.c.p to calculate sum of the given series.
+
 #include<stdio.h>
 int main(){
-	int term=2,num,i,sum=0;
-	printf("Enter a number: ");
+	int term=1,num,i=1,sum=0,dif=1;
+	printf("Enter number of terms: ");
 	scanf("%d",&num);
 	for(i=1;i<=num;i++){
 		sum += term;
-		term += 3;
+		term += dif;
+		dif++;
 	}
-	printf("sum of the given series is: %d",sum);
+	printf("sum of the terms is: %d",sum);
 }
