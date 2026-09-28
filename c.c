@@ -237,4 +237,15 @@ int main()
 	printf("sum of the numbers=%d",sum);
 	return 0;
 }
-   
+//2+5+8+11+14..upto n terms.w.c.p to calculate sum of the given series
+#include<stdio.h>
+int main(){
+	int term=2,num,i,sum=0;
+	printf("Enter a number: ");
+	scanf("%d",&num);
+	for(i=1;i<=num;i++){
+		sum += term;
+		term += 3;
+	}
+	printf("sum of the given series is: %d",sum);
+}
