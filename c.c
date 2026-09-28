@@ -253,15 +253,30 @@
 
 //1+2+4+7+11+..upto n terms.w.c.p to calculate sum of the given series.
 
+//#include<stdio.h>
+//int main(){
+//	int term=1 ,num,i=1,sum=0,dif=1;
+//	printf("Enter number of terms: ");
+//	scanf("%d",&num);
+//	for(i=1;i<=num;i++){
+//		sum += term;
+//		term += dif;
+//		dif++;
+//	}
+//	printf("sum of the terms is: %d",sum);
+//}
+
+//0,1,1,2,3,5,8...upto n terms. w.c.p to display the given sequence
+
 #include<stdio.h>
 int main(){
-	int term=1,num,i=1,sum=0,dif=1;
+	int a=0,num,i=1,sum=1,temp;
 	printf("Enter number of terms: ");
 	scanf("%d",&num);
 	for(i=1;i<=num;i++){
-		sum += term;
-		term += dif;
-		dif++;
-	}
-	printf("sum of the terms is: %d",sum);
+		printf("%d\t",temp);
+		temp = a+sum;
+		a = sum;
+		sum = temp;
+    }
 }
