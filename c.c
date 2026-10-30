@@ -215,26 +215,96 @@
 //3!=3*2*1=6
 //5!=5*4*3*1=120
 //upto n !
+//#include<stdio.h>
+//int main()
+//{
+//	int i=1, c=1,a=1,n;
+//	long int fact,sum=0;
+//	printf("enter the number of terms:");
+//	scanf("%d",&n);
+//	
+//	while(c<=n){
+//		i=1;
+//		fact=1;
+//		while(i<=a){
+//			fact=fact*i;
+//			i++;
+//		}
+//		sum=sum+fact;
+//		c++;
+//		a=a+2;
+//	}
+//	printf("sum of the numbers=%d",sum);
+//	return 0;
+//}
+
+//write a c program to check weather a number is prime or not, firstv using while loop then for loop
+   
+//#include <stdio.h>
+//int main()
+//{
+//    int n, i = 1, count = 0;
+//    printf("Enter a number: ");
+//    scanf("%d", &n);
+//while (i <= n)
+//    {
+//        if (n % i == 0)
+//        {
+//            count++;
+//        }
+//        i++;
+//    }
+//    if (count==2)
+//    {
+//        printf("%d is a prime number.", n);
+//    }
+//	   }else{
+//        printf("%d is not a prime number.", n);
+//    }
+//    return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//    int n, i, count = 0;
+//    printf("Enter a number: ");
+//    scanf("%d", &n);
+//for(i=1;i<=n;i++)
+//    {
+//        if (n % i == 0)
+//        {
+//            count++;
+//        }
+//        
+//    }
+//    if (count==2)
+//    {
+//        printf("%d is a prime number.", n);
+//    }
+//	else{
+//        printf("%d is not a prime number.", n);
+//    }
+//    return 0;
+//}
+
+//write a program to check weather a number is perfect or not:
 #include<stdio.h>
-int main()
-{
-	int i=1, c=1,a=1,n;
-	long int fact,sum=0;
-	printf("enter the number of terms:");
-	scanf("%d",&n);
-	
-	while(c<=n){
-		i=1;
-		fact=1;
-		while(i<=a){
-			fact=fact*i;
-			i++;
+int main(){
+	int num,i=1,sum=0;
+	printf("enter a number: ");
+	scanf("%d",&num);
+	while(i<num){
+		if(num%i==0){
+			sum = sum+i;
 		}
-		sum=sum+fact;
-		c++;
-		a=a+2;
+		i++;
 	}
-	printf("sum of the numbers=%d",sum);
+	if(sum == num && num > 0){
+		printf("this is a perfect number...");
+	}
+	else{
+		printf("this is not a perfect number...");
+	}
 	return 0;
 }
-   
