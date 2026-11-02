@@ -57,7 +57,7 @@
 
 //#include<stdio.h>
 //int main(){
-//	int len,br,sum;
+//	int len,br;
 //	printf("Enter the length of the rectangle: ");
 //	scanf("%d",&len);
 //	printf("Enter the breadth of the rectangle: ");
@@ -67,244 +67,99 @@
 //	
 //}
 
-//write a c program which read an intger value and check whether it is positive or not, after satisfied the integer value > 0.if it is possitive then check whether it is odd or even
+//write a program to convert celsius to farenheite
 
-//#include <stdio.h>
+//#include<stdio.h>
 //int main(){
-//	int num;
-//	printf("Enter a number: ");
+//	int cel,far;
+//	printf("Enter celcius: ");
+//	scanf("%d",&cel);
+//	far = (cel*1.8)+32;
+//	printf(" farenheite: %d",far);
+//}
+
+//write a program to convert celsius to farenheite
+
+//#include<stdio.h>
+//int main(){
+//	int far,cel;
+//	printf("Enter farenheite: ");
+//	scanf("%d",&far);
+//	cel = (far-32)*5/9;
+//	printf("celcius: %d",cel);
+//}
+
+//write a program to calculate simple interest
+
+//#include<stdio.h>
+//int main(){
+//	int p,t,r;
+//	printf("Enter principal: ");
+//	scanf("%d",&p);
+//	printf("Enter rate of interest: ");
+//	scanf("%d",&r);
+//	printf("Enter time: ");
+//	scanf("%d",&t);
+//	int s = (p*r*t)/100;
+//	printf("Simple interest: %d",s);
+//}
+
+//write a c program to calculate sum of digits
+//#include<stdio.h>
+//void main(){
+//	int num,sum;
+//	printf("Enter numbers: ");
 //	scanf("%d",&num);
-//	if(num>0)
-//	{
-//		printf("The number is possitive number...\n");
-//		if(num%2 == 0)
-//		{
-//			printf("Even number");
-//		}else{
-//			printf("odd number");
-//		}
+//	while(num!=0){
+//		int digits = num%10;
+//		sum += digits;
+//		num /= 10;
 //	}
-//	else
-//	{
-//		printf("The number is nagative number...");
-//	}
+//	printf("Sum of Digits is: %d",sum);
 //}
 
-
-// wrtie a c program to find the greatest among 3 inputade numbers
-
-//#include <stdio.h>
-//int main(){
-//	int num1,num2,num3;
-//	printf("Enter first a number: ");
-//	scanf("%d",&num1);
-//	printf("Enter second a number: ");
-//	scanf("%d",&num2);
-//	printf("Enter third a number: ");
-//	scanf("%d",&num3);
-//	if(num1>num2 && num1 > num3)
-//	{
-//		printf("The first number is greatest... %d",num1);
-//		
+//write a c program to count the digits of a whole number
+//#include<stdio.h>
+//void main(){
+//	int num,i=0;
+//	printf("Enter numbers: ");
+//	scanf("%d",&num);
+//	while(num!=0){
+//		int digits = num%10;
+//		num /= 10;
+//		i++;
 //	}
-//	else if (num2 > num3)
-//	{
-//		printf("The second number is greatest... %d",num2);
-//	}
-//	else{
-//		printf("The third number is greatest... %d",num3);
-//	}
+//	printf("total digits: %d",i);
 //}
 
-// write a c program to calculate the electricity bill based on the number of units consumed the charges are
-// 0 to 100 2rs per unit
-//101 to 200 3rs per unit
-//201 to 300 5rs  per unit
-// above 300 7rs per unit
-
-//#include <stdio.h>
-//int main(){
-//	int unit;
-//	printf("Enter number of units consumed: ");
-//	scanf("%d",&unit);
-//	if (unit <= 100)
-//	{
-//	    printf( "Electricity bill= %d",unit *2);
-//	}
-//	else if (unit <=200)
-//	{
-//		printf( "Electricity bill= %d",(100 *2)+(unit - 100)*3);
-//	}
-//	else if(unit <=300)
-//	{
-//		printf( "Electricity bill= %d",(100 *2)+(100*3)+(unit - 200)*5);
-//	}
-//	else{
-//		printf( "Electricity bill= %d",(100 *2)+(100*3)+(100*5)+(unit - 300)*7);
-//	}
-//}
-
-//write a program to print 1 - 5 uxing in while loop
-
-//#include <stdio.h>
-//int main(){
-//	int num= 0;
-//	while(num <=5)
-//	{
-//		++num;
-//		printf("%d",num);
-//	}
-//}
-
-//write a program to print 5 - 1 uxing in while loop
-//#include <stdio.h>
-//int main(){
-//	int num= 5;
-//	while(num >=1)
-//	{
-//		printf("%d",num);
-//		--num;
-//		
-//	}
-//}
-
-//WRITE A C PROGRAM TO PRINT EVEN NUMBERS TO 10
+//write a c program to reverse the digits of a whole number
 
 //#include<stdio.h>
 //int main(){
-//	int num = 1;
-//	while(num<=10)
-//	{
-//		if(num%2==0)
-//		printf("\neven number is: %d",num);
-//		num++;
+//	int num,reverse=0,digit;
+//	printf("Enter numbers: ");
+//	scanf("%d",&num);
+//	while(num!=0){
+//		digit = num%10;
+//		reverse =reverse*10+digit;
+//		num /= 10;
 //	}
+//	printf("total digits: %d",reverse);
 //}
 
-//WRITE A C PROGRAM TO PRINT EVEN NUMBERS TO 10
-
-//#include<stdio.h>
-//int main(){
-//	int num = 1;
-//	while(num<=10)
-//	{
-//		if(num%2!=0)
-//		printf("\nodd number is: %d",num);
-//		num++;
-//	}
-//}
-
-
-//program a c program display odd numbers from 1 to n
-
-//#include<stdio.h>
-//int main(){
-//	int num = 1,i;
-//	printf("Enter a number: ");
-//	scanf("%d",&i);
-//	while(num<=i)
-//	{
-//		if(num%2!=0)
-//		printf("\nodd number is: %d",num);
-//		num++;
-//	}
-//}
-
-//write  a C programe to find the sum of the following series1!+3!+5!.....upto n numbers*/
-//1! =1
-//3!=3*2*1=6
-//5!=5*4*3*1=120
-//upto n !
-//#include<stdio.h>
-//int main()
-//{
-//	int i=1, c=1,a=1,n;
-//	long int fact,sum=0;
-//	printf("enter the number of terms:");
-//	scanf("%d",&n);
-//	
-//	while(c<=n){
-//		i=1;
-//		fact=1;
-//		while(i<=a){
-//			fact=fact*i;
-//			i++;
-//		}
-//		sum=sum+fact;
-//		c++;
-//		a=a+2;
-//	}
-//	printf("sum of the numbers=%d",sum);
-//	return 0;
-//}
-
-//write a c program to check weather a number is prime or not, firstv using while loop then for loop
-   
-//#include <stdio.h>
-//int main()
-//{
-//    int n, i = 1, count = 0;
-//    printf("Enter a number: ");
-//    scanf("%d", &n);
-//while (i <= n)
-//    {
-//        if (n % i == 0)
-//        {
-//            count++;
-//        }
-//        i++;
-//    }
-//    if (count==2)
-//    {
-//        printf("%d is a prime number.", n);
-//    }
-//	   }else{
-//        printf("%d is not a prime number.", n);
-//    }
-//    return 0;
-//}
-
-//#include <stdio.h>
-//int main()
-//{
-//    int n, i, count = 0;
-//    printf("Enter a number: ");
-//    scanf("%d", &n);
-//for(i=1;i<=n;i++)
-//    {
-//        if (n % i == 0)
-//        {
-//            count++;
-//        }
-//        
-//    }
-//    if (count==2)
-//    {
-//        printf("%d is a prime number.", n);
-//    }
-//	else{
-//        printf("%d is not a prime number.", n);
-//    }
-//    return 0;
-//}
-
-//write a program to check weather a number is perfect or not:
+//write a c program to print tribonacci series
 #include<stdio.h>
 int main(){
-	int num,i=1,sum=0;
-	printf("enter a number: ");
-	scanf("%d",&num);
-	while(i<num){
-		if(num%i==0){
-			sum = sum+i;
-		}
+	int a=0,b=1,c=1,d,n,i=1;
+	printf("Enter the terms: ");
+	scanf("%d",&n);
+	printf("tribonacci series: ");
+	while(i<=n){
+		printf("%d",a);
+		d= a+b+c;
+		a= b;
+		b= c;
+		c= d;
 		i++;
 	}
-	if(sum == num && num > 0){
-		printf("this is a perfect number...");
-	}
-	else{
-		printf("this is not a perfect number...");
-	}
-	return 0;
 }
